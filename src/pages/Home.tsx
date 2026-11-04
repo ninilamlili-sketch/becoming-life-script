@@ -1,6 +1,13 @@
+import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
+import { hasValidRedeemToken } from '../lib/auth'
 
 export default function Home() {
+  const ctaTo = useMemo(
+    () => (hasValidRedeemToken() ? '/consent' : '/redeem'),
+    [],
+  )
+
   return (
     <div className="home-page min-h-screen flex flex-col text-ink">
       <div className="home-fade flex-1 flex flex-col items-center px-7 pt-14 pb-10 text-center">
@@ -48,8 +55,8 @@ export default function Home() {
           <p>有时，改变的开始，是重新看见自己。</p>
         </div>
 
-        {/* 6. CTA */}
-        <Link to="/consent" className="btn-explore">
+        {/* 6. CTA → /redeem (or /consent if valid JWT already stored) */}
+        <Link to={ctaTo} className="btn-explore">
           开始探索
         </Link>
 
@@ -58,7 +65,7 @@ export default function Home() {
           7个人生领域 · 约5—8分钟 · 没有标准答案
         </p>
         <p className="mt-2 text-[11px] text-ink-muted/85 leading-relaxed max-w-[18rem]">
-          无需注册 · 报告可导出
+          兑换后开始 · 报告可导出 · 答案仅存本地
         </p>
       </div>
 

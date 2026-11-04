@@ -1,8 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import RequireAuth from './components/RequireAuth'
 import Consent from './pages/Consent'
-import Quiz from './pages/Quiz'
 import Explore from './pages/Explore'
+import Home from './pages/Home'
+import Quiz from './pages/Quiz'
+import Redeem from './pages/Redeem'
 import Report from './pages/Report'
 
 /** Product is mobile-only; desktop just shows a centered phone column. */
@@ -12,10 +14,39 @@ export default function App() {
       <div className="w-full max-w-[430px] min-h-screen bg-cream shadow-[0_0_40px_rgba(57,58,53,0.05)]">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/consent" element={<Consent />} />
-          <Route path="/quiz" element={<Quiz />} />
-          <Route path="/explore" element={<Explore />} />
-          <Route path="/report" element={<Report />} />
+          <Route path="/redeem" element={<Redeem />} />
+          <Route
+            path="/consent"
+            element={
+              <RequireAuth>
+                <Consent />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/quiz"
+            element={
+              <RequireAuth>
+                <Quiz />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/explore"
+            element={
+              <RequireAuth>
+                <Explore />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/report"
+            element={
+              <RequireAuth>
+                <Report />
+              </RequireAuth>
+            }
+          />
         </Routes>
       </div>
     </div>

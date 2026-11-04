@@ -7,18 +7,25 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:codes": "node scripts/test-codes.mjs",
+    "codes:generate": "node scripts/generate-codes.mjs",
+    "codes:void": "node scripts/void-code.mjs",
+    "preview:ui": "vite preview --host 0.0.0.0 --port 5173"
   },
   "dependencies": {
     "@fontsource/noto-sans-sc": "^5.3.1",
     "@fontsource/noto-serif-sc": "^5.3.1",
+    "@neondatabase/serverless": "^1.2.0",
     "html-to-image": "^1.11.13",
+    "jose": "^6.2.15",
     "jspdf": "^4.2.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.5"
   },
   "devDependencies": {
+    "@netlify/functions": "^6.1.0",
     "@tailwindcss/vite": "^4.3.4",
     "@types/node": "^24.19.2",
     "@types/react": "^19.3.0",
@@ -29,5 +36,5 @@
     "typescript": "~7.0.2",
     "vite": "^8.3.5"
   },
-  "description": "becoming × 《改写人生剧本》 Phase-3 UI prototype"
+  "description": "becoming \u00d7 \u300a\u6539\u5199\u4eba\u751f\u5267\u672c\u300b \u2014 redeem-gated exploration (Netlify + Neon)"
 }

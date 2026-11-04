@@ -33,3 +33,6 @@ dist-ssr
 
 # Cloudflare Wrangler local
 .wrangler
+
+# Generated redeem plaintext / SQL batches (may contain secrets)
+scripts/out/
