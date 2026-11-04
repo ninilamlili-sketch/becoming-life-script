@@ -1,0 +1,1293 @@
+{
+  "version": "2.0",
+  "dimensions": [
+    {
+      "key": "money_wealth",
+      "zh": "金钱与财富",
+      "core": "我如何看待金钱、赚钱、财富、富足与安全感？",
+      "abbr": "MW"
+    },
+    {
+      "key": "career_achievement",
+      "zh": "职业与成就",
+      "core": "我如何看待成功、竞争、职业选择、能力与成就？",
+      "abbr": "CA"
+    },
+    {
+      "key": "self_worth_identity",
+      "zh": "自我价值与身份认同",
+      "core": "我如何定义自己？我认为自己的价值来自哪里？",
+      "abbr": "SW"
+    },
+    {
+      "key": "intimacy_love",
+      "zh": "亲密关系与爱情",
+      "core": "我如何看待爱、信任、承诺、依赖与亲密？",
+      "abbr": "IL"
+    },
+    {
+      "key": "social_belonging",
+      "zh": "人际关系与社会认同",
+      "core": "我如何面对他人的评价、冲突、边界与归属？",
+      "abbr": "SB"
+    },
+    {
+      "key": "choice_agency",
+      "zh": "选择与人生掌控",
+      "core": "我如何面对不确定性、风险、变化与人生选择？",
+      "abbr": "CH"
+    },
+    {
+      "key": "meaning_fulfillment",
+      "zh": "自我实现与生命意义",
+      "core": "我是否允许自己追求真正想要的生活？",
+      "abbr": "MF"
+    }
+  ],
+  "tie_break_order": [
+    "self_worth_identity",
+    "choice_agency",
+    "intimacy_love",
+    "career_achievement",
+    "money_wealth",
+    "social_belonging",
+    "meaning_fulfillment"
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "想给自己添一件「可负担」的东西",
+      "scenario": "刚发了工资（或刚到一笔收入），你想给自己买一件心仪很久、价格也在可负担范围内的东西。付钱前，心里最先浮现的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "先核对这个月必要开支和备用金，确认没问题再买",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "可以买，但更想把钱优先用在家人或「更有意义」的地方",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "总觉得一花钱心里就不踏实，好像安全感会跟着变薄",
+          "score": 2,
+          "belief_clue": "花钱＝安全感流失"
+        },
+        {
+          "id": "D",
+          "text": "就算算得过来，也常觉得「钱很难赚，不该轻易动」或「以后可能会出事」",
+          "score": 3,
+          "belief_clue": "赚钱必苦 / 未来灾难化"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 是合理风险与预算边界；B 偏价值取向。C 把可负担消费迅速连到不安，属习惯思维；D 把「赚钱辛苦 / 动用即危险」升格为硬规则，更接近僵化信念线索。",
+      "dimension": "money_wealth",
+      "theme": "可负担消费前的不安"
+    },
+    {
+      "id": "Q02",
+      "title": "看到「多赚一点」的机会",
+      "scenario": "有一个需要你额外投入时间或学习、但回报可能更高的机会（副业、涨价、换岗、投资自己的技能）。你第一反应更接近？",
+      "options": [
+        {
+          "id": "A",
+          "text": "先看投入产出、时间成本和最坏情况，再决定试不试",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "钱重要，但我不想用透支健康或关系的方式去换",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "心里先冒出「我大概没那个能力多赚」，还没细算就泄气",
+          "score": 2,
+          "belief_clue": "我没能力赚更多"
+        },
+        {
+          "id": "D",
+          "text": "潜规则是：想过得更好就必须牺牲大量时间自由，否则不配拥有",
+          "score": 3,
+          "belief_clue": "财富＝牺牲时间自由"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 务实评估；B 生活边界价值观。C 是能力自我设限的习惯思维；D 把「富足」锁死在「必须苦熬」，限制对更优路径的想象。",
+      "dimension": "money_wealth",
+      "theme": "「多赚一点」机会前的自我设限"
+    },
+    {
+      "id": "Q03",
+      "title": "谈到报酬、加薪或报价",
+      "scenario": "你需要跟合作方或老板谈报酬（加薪、报价、分账）。约好要开口前，内在更接近哪句？",
+      "options": [
+        {
+          "id": "A",
+          "text": "先准备依据和底线，谈得成最好，谈不成也有备选",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "钱重要，但不想让关系变尴尬，会尽量找温和的说法",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "一想到谈钱就紧，好像我在「讨」而不是在交换价值",
+          "score": 2,
+          "belief_clue": "谈钱＝索取"
+        },
+        {
+          "id": "D",
+          "text": "一想到要更多，就隐隐觉得不合适，好像自己不该争这一块",
+          "score": 3,
+          "belief_clue": "不配拥有 / 财富招麻烦"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 健康协商；B 关系取向的谨慎（价值观）。C 习惯把正当交换读成乞求；D 直接触及「不配」或「财富危险」的僵化线索。",
+      "dimension": "money_wealth",
+      "theme": "谈报酬时的配得感"
+    },
+    {
+      "id": "Q04",
+      "title": "想开始一件有意义却还没动的事",
+      "scenario": "你心里有一件想做很久的事（新方向、作品、报名、申请、副业……），客观条件大致够了，却迟迟没迈第一步。最贴近你的原因是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "时间/精力排期还没理清，我在等一个更稳的启动窗口",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "这件事和现阶段价值观优先级不完全对齐，所以在观望",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "总觉得「还没准备好」，一想到要开始就先把清单再加长",
+          "score": 2,
+          "belief_clue": "没准备好就不能开始"
+        },
+        {
+          "id": "D",
+          "text": "潜规则：做不好就等于没能力；或者「现在改方向已经太晚了」",
+          "score": 3,
+          "belief_clue": "失败＝无能 / 改方向太晚"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 资源安排（合理风险）；B 价值排序。C 是准备门槛式习惯思维；D 把结果与能力本质绑定，或把年龄/阶段绝对化，属僵化信念线索。",
+      "dimension": "career_achievement",
+      "theme": "想做未做的准备门槛"
+    },
+    {
+      "id": "Q05",
+      "title": "稳定工作 vs 更想做的事",
+      "scenario": "你有一份相对稳定的工作，同时心里还有更想投入的方向。朋友问起「你会不会改变」，你内在更诚实的声音是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "先算清财务缓冲与可逆步骤，再决定动多大",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "我更看重生活节奏与长期意义，不一定以「热烈」为唯一标准",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "即使心动，也常告诉自己「稳定比喜欢更重要」，很少真正评估喜欢的可行性",
+          "score": 2,
+          "belief_clue": "稳定压过热爱（习惯）"
+        },
+        {
+          "id": "D",
+          "text": "几乎立刻否定想要的方向：没有成绩就不能证明我行，或不允许自己「输给别人的选择」",
+          "score": 3,
+          "belief_clue": "成绩才证明能力 / 不能输"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 风险对冲；B 节奏与意义价值观。C 把「稳定优先」变成不经审视的默认；D 用成绩或输赢定义自我，线索更强。",
+      "dimension": "career_achievement",
+      "theme": "稳定 vs 想做的事"
+    },
+    {
+      "id": "Q06",
+      "title": "结果不如预期或被比较时",
+      "scenario": "一次努力后的结果低于预期，或同事/同行阶段性成绩更亮眼。接下来几天你更像？",
+      "options": [
+        {
+          "id": "A",
+          "text": "难过一下，然后拆解可控项，下次怎么调",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "会重估「这件事对我到底有多重要」，再决定要不要继续",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "脑内循环「早该想到」，或反复盯着别人的评价",
+          "score": 2,
+          "belief_clue": "事后自责 / 评价敏感"
+        },
+        {
+          "id": "D",
+          "text": "结论很快变成：我不能接受自己落后；这次失利说明我不配谈成就",
+          "score": 3,
+          "belief_clue": "不能输 / 失利＝不配"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 情绪＋复盘；B 意义重估。C 习惯性反刍与评价依赖；D 把竞争结果焊死在自我资格上，属僵化线索。",
+      "dimension": "career_achievement",
+      "theme": "结果不佳或被比较后"
+    },
+    {
+      "id": "Q07",
+      "title": "被称赞或被看见时",
+      "scenario": "有人真诚称赞你的能力或付出。你内在更常出现的反应是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "谢谢，并能具体接收对方看到的点",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "开心，但会私下再核对自己是否「名副其实」",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "习惯性把功劳推给运气、团队或「没那么难」",
+          "score": 2,
+          "belief_clue": "功劳外推 / 不够好"
+        },
+        {
+          "id": "D",
+          "text": "称赞让我不安：好像接下来要配得上，或「只有足够优秀才值得被认可」",
+          "score": 3,
+          "belief_clue": "优秀才配被认可"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 健康接收；B 自我校准（可属价值观）。C 是自我贬低习惯；D 把认可设成「优秀门槛」，僵化线索更强。",
+      "dimension": "self_worth_identity",
+      "theme": "接收称赞"
+    },
+    {
+      "id": "Q08",
+      "title": "休息或「没什么产出」的一天",
+      "scenario": "难得空闲，你什么任务都没推进，只是休息或发呆。傍晚时你对自己的评价更接近？",
+      "options": [
+        {
+          "id": "A",
+          "text": "休息也是必要的，明天再排优先级就好",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "我重视效率，但今天选择了恢复，这是我的安排",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "会隐隐觉得「又浪费了一天」，哪怕身体确实需要",
+          "score": 2,
+          "belief_clue": "休息＝浪费"
+        },
+        {
+          "id": "D",
+          "text": "几乎自动出现：没有成绩就没有价值；我不产出就不怎么值得被重视",
+          "score": 3,
+          "belief_clue": "无成绩＝无价值"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 健康休整；B 主动节奏。C 把休息道德化为浪费（习惯思维）；D 把存在价值绑在成绩/产出上（僵化信念线索）。",
+      "dimension": "self_worth_identity",
+      "theme": "休息日的自我评价"
+    },
+    {
+      "id": "Q09",
+      "title": "需要拒绝，或表达真实需求",
+      "scenario": "有人提出占用你较多时间/精力的请求，你其实不想答应；或你想提出一个真实需求。你更可能？",
+      "options": [
+        {
+          "id": "A",
+          "text": "温和而清楚地说出边界或需求，并在能力内给替代方案（如有）",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "会权衡关系亲疏与自己的原则，再决定怎么说",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "先答应或咽下需求，事后懊恼「我太不会照顾自己」",
+          "score": 2,
+          "belief_clue": "难以表达真实需求"
+        },
+        {
+          "id": "D",
+          "text": "很难拒绝或很难开口提需求，总觉得一开口就显得自己很麻烦、不够好",
+          "score": 3,
+          "belief_clue": "必须满足期待 / 不能犯错式讨好"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 边界；B 情境权衡。C 是习惯性压抑后自责；D 把「被需要/零失误迎合」等同于价值本身。",
+      "dimension": "self_worth_identity",
+      "theme": "拒绝与表达真实需求"
+    },
+    {
+      "id": "Q10",
+      "title": "想在关系里提出一个需求",
+      "scenario": "在恋爱或亲密关系里，你有一个对你重要的需求（陪伴方式、节奏、界限等）。开口前你更像？",
+      "options": [
+        {
+          "id": "A",
+          "text": "选一个合适时机，把事实和感受说清楚，并听对方的空间",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "我会提，但更在意双方都能舒服的表达方式",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "总担心一提需求会给对方压力，于是反复改措辞或拖延",
+          "score": 2,
+          "belief_clue": "表达需求＝给对方压力"
+        },
+        {
+          "id": "D",
+          "text": "潜规则：真爱就该懂我，不必说；或「提了就可能被抛弃」",
+          "score": 3,
+          "belief_clue": "爱该懂我 / 不能被抛弃"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 健康沟通；B 关系温度价值观。C 习惯性把需求＝负担；D 把爱理想化或把表达绑定抛弃恐惧，属僵化线索。",
+      "dimension": "intimacy_love",
+      "theme": "在关系里提需求"
+    },
+    {
+      "id": "Q11",
+      "title": "关系出现分歧或需要妥协时",
+      "scenario": "你们对一件事意见不合（时间分配、家人、未来规划等）。你更常怎么做？",
+      "options": [
+        {
+          "id": "A",
+          "text": "先澄清彼此底线与可协商区，再找共同方案",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "我愿意让一步，如果这件事对我的长期价值没那么核心",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "为了维持关系气氛，常常先压下自己的立场，事后才觉得委屈",
+          "score": 2,
+          "belief_clue": "维持关系必须先妥协"
+        },
+        {
+          "id": "D",
+          "text": "几乎总会先配合对方，担心一坚持立场，关系就会变淡或不稳",
+          "score": 3,
+          "belief_clue": "爱是有条件的 / 配合才配被爱"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 协商；B 选择性让步（价值观）。C 习惯性自我消音；D 把爱理解为持续条件交换，僵化线索更强。",
+      "dimension": "intimacy_love",
+      "theme": "分歧时的妥协脚本"
+    },
+    {
+      "id": "Q12",
+      "title": "亲密靠近与独立空间",
+      "scenario": "对方想更亲密（更多见面、分享、承诺），或反过来你需要更多独处。你内在更接近？",
+      "options": [
+        {
+          "id": "A",
+          "text": "说清自己的节奏，也询问对方的需要，一起调温度",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "我珍惜亲密，也珍惜独立，会主动谈「怎么都舒服」",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "一靠近就怕失去自己，一独立又怕对方觉得我不爱",
+          "score": 2,
+          "belief_clue": "亲密＝失去自我 / 独立＝不爱"
+        },
+        {
+          "id": "D",
+          "text": "强烈感觉「我不能失去这段关系」，于是很难设边界或很难信任承诺",
+          "score": 3,
+          "belief_clue": "不能被抛弃 / 信任困难式紧抓"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A/B 平衡亲密与自主。C 是摆荡式习惯思维；D 以抛弃恐惧主导边界与信任，属僵化信念线索。",
+      "dimension": "intimacy_love",
+      "theme": "亲密与独立的摆荡"
+    },
+    {
+      "id": "Q13",
+      "title": "需要拒绝朋友或同事的请求",
+      "scenario": "朋友/同事提出一个你心力不足的请求（帮忙、局、额外工作）。你更可能？",
+      "options": [
+        {
+          "id": "A",
+          "text": "温和清楚地拒绝，必要时给替代方案",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "看关系亲疏与自己原则，再决定怎么回",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "很难说「不」，怕对方失望，事后又懊恼",
+          "score": 2,
+          "belief_clue": "不能让别人失望"
+        },
+        {
+          "id": "D",
+          "text": "潜规则：拒绝＝自私；我必须让所有人喜欢我",
+          "score": 3,
+          "belief_clue": "拒绝＝自私 / 必须被喜欢"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 边界；B 情境权衡。C 是讨好习惯；D 把拒绝道德化为自私、把归属绑在「人人喜欢」，僵化线索更强。",
+      "dimension": "social_belonging",
+      "theme": "拒绝请求"
+    },
+    {
+      "id": "Q14",
+      "title": "意见不同或可能发生冲突时",
+      "scenario": "讨论中你有不同看法，或气氛开始紧绷。你第一反应更像？",
+      "options": [
+        {
+          "id": "A",
+          "text": "把分歧说清楚，对事不对人，接受一时不适",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "我会表达，但更想先找共识点，降低火药味",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "能躲就躲，或立刻改口附和，事后才觉得憋",
+          "score": 2,
+          "belief_clue": "冲突＝危险，先迎合"
+        },
+        {
+          "id": "D",
+          "text": "只要气氛一紧就很慌，急着缓和或认错，好像冲突一出现关系就危险了",
+          "score": 3,
+          "belief_clue": "冲突＝破裂 / 他人情绪归我"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 健康异议；B 和缓表达价值观。C 回避冲突的习惯；D 把冲突灾难化并过度揽责，属僵化线索。",
+      "dimension": "social_belonging",
+      "theme": "冲突与异议"
+    },
+    {
+      "id": "Q15",
+      "title": "感到被评价或被排除时",
+      "scenario": "群聊里少被@、聚会里话少、或隐约感到自己「不够合群」。你更常表现得像？",
+      "options": [
+        {
+          "id": "A",
+          "text": "先不急着解读，需要时再找一个人核实或调整参与方式",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "会在意归属感，因为我珍惜相互尊重的圈子",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "脑子自动编写「是不是我太多余/太讨嫌」的剧本",
+          "score": 2,
+          "belief_clue": "自我归咎求归属"
+        },
+        {
+          "id": "D",
+          "text": "我必须表现得让所有人满意，否则就不会被人接纳。",
+          "score": 3,
+          "belief_clue": "表现换归属 / 外部评价定我"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 现实归因；B 归属价值观。C 习惯性自我归咎；D 把社会认同完全外包给「让所有人满意」，僵化线索更强。",
+      "dimension": "social_belonging",
+      "theme": "被评价/被排除感"
+    },
+    {
+      "id": "Q16",
+      "title": "面对一个结果不确定的决定",
+      "scenario": "你要做一个对生活有影响、但结果无法 100% 确定的决定（搬家、换工作、开启关系、报名长期项目等）。你更像？",
+      "options": [
+        {
+          "id": "A",
+          "text": "收集关键信息，设定可逆步骤与退出条件，然后行动",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "我会偏谨慎，因为我珍惜稳定节奏，这是我的选择",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "总想再多问几个人、再多比几案，决定一拖再拖",
+          "score": 2,
+          "belief_clue": "必须更确定才能动"
+        },
+        {
+          "id": "D",
+          "text": "潜规则：必须确定结果才能行动；选错就会毁掉人生",
+          "score": 3,
+          "belief_clue": "确定才能行动 / 选错毁一生"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 可控风险下的行动；B 稳定偏好价值观。C 是信息焦虑式习惯；D 把不确定性绝对禁止，并把单次选择灾难化。",
+      "dimension": "choice_agency",
+      "theme": "不确定下的决定"
+    },
+    {
+      "id": "Q17",
+      "title": "生活出现变化或计划被打乱时",
+      "scenario": "原定计划突然变了（项目取消、关系节奏变、政策/环境变化）。你内在第一反应更接近？",
+      "options": [
+        {
+          "id": "A",
+          "text": "先稳住情绪，列出新的可选项，再重新排序",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "变化让我不舒服，但我接受「人生本来有弹性」",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "强烈想立刻把一切拉回「可控」，否则坐立不安",
+          "score": 2,
+          "belief_clue": "失控就不能安心"
+        },
+        {
+          "id": "D",
+          "text": "结论很快变成：我无法改变现状；机会只有一次，错过就完了",
+          "score": 3,
+          "belief_clue": "无力改变 / 机会唯一"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 适应策略；B 弹性价值观。C 习惯性抓控制感；D 无助＋唯一机会叙事，僵化限制再选择。",
+      "dimension": "choice_agency",
+      "theme": "计划被打乱"
+    },
+    {
+      "id": "Q18",
+      "title": "几个选项都不「完美」时",
+      "scenario": "面前有 2–3 个都不完美的选项，截止日期临近。你通常？",
+      "options": [
+        {
+          "id": "A",
+          "text": "按现阶段目标选「足够好」的，并接受取舍",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "更在意哪个选项更符合我的长期价值，哪怕短期不漂亮",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "反复横跳，怕选了会后悔，精力耗在比较上",
+          "score": 2,
+          "belief_clue": "怕后悔式横跳"
+        },
+        {
+          "id": "D",
+          "text": "潜规则：我必须找到最好的那个；不能接受不完美的选择",
+          "score": 3,
+          "belief_clue": "必须最优 / 拒绝不完美选择"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 足够好策略；B 价值导向。C 习惯性比较耗竭；D 完美选择强迫，显著推迟人生行动。",
+      "dimension": "choice_agency",
+      "theme": "不完美选项中的选择"
+    },
+    {
+      "id": "Q19",
+      "title": "想象「真正想要的生活」时",
+      "scenario": "有人问你：「如果少一点应该，你真正想过的日子是什么样？」你内在更常？",
+      "options": [
+        {
+          "id": "A",
+          "text": "能具体说出一些画面，并知道眼下可迈的一小步",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "我有方向感，但更强调意义与责任的平衡",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "脑子先冒出「那不现实」，画面还没展开就被掐掉",
+          "score": 2,
+          "belief_clue": "想要的＝不现实"
+        },
+        {
+          "id": "D",
+          "text": "潜规则：人生该走一条正确的路；我的需求不那么重要",
+          "score": 3,
+          "belief_clue": "正确之路 / 需求不重要"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 可行动的愿景；B 意义—责任平衡价值观。C 习惯性自我否决想象；D 用「正确之路」压制个人需求，僵化线索更强。",
+      "dimension": "meaning_fulfillment",
+      "theme": "想象真正想要的生活"
+    },
+    {
+      "id": "Q20",
+      "title": "想为自己的喜欢投入时间",
+      "scenario": "你想把一部分时间花在真正喜欢的事上（创作、学习、旅行节奏、兴趣深度等），但身边有「正事」压力。你更像？",
+      "options": [
+        {
+          "id": "A",
+          "text": "在责任清单里划出固定的「喜欢时间」，并保护它",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "我会排期，因为阶段重点不同，喜欢可以轮流靠前",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "喜欢的事总被挤到最后，事后觉得生活只剩完成任务",
+          "score": 2,
+          "belief_clue": "喜欢总是最后"
+        },
+        {
+          "id": "D",
+          "text": "喜欢的事总觉得「以后再说」，好像得先把所有责任清完才配碰",
+          "score": 3,
+          "belief_clue": "喜欢不现实 / 责任清零才能生活"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 主动保护意义时间；B 阶段性排序。C 习惯性自我后置；D 把自我实现无限延期，属僵化信念线索。",
+      "dimension": "meaning_fulfillment",
+      "theme": "为喜欢投入时间"
+    },
+    {
+      "id": "Q21",
+      "title": "面对「自由的代价」与社会期待",
+      "scenario": "你隐约知道某种更自由、更贴合自己的选择，可能不被家人/圈子完全理解。你更接近？",
+      "options": [
+        {
+          "id": "A",
+          "text": "评估真实代价与支持系统，再决定披露与推进的节奏",
+          "score": 0,
+          "belief_clue": null
+        },
+        {
+          "id": "B",
+          "text": "我在意亲近的人的感受，也会为自己保留核心选择权",
+          "score": 1,
+          "belief_clue": null
+        },
+        {
+          "id": "C",
+          "text": "一想到可能被评价，就先缩小自己的愿望",
+          "score": 2,
+          "belief_clue": "用缩小愿望换安稳"
+        },
+        {
+          "id": "D",
+          "text": "潜规则：自由代价太大，不值得；我应该符合期待才算「像样的人生」",
+          "score": 3,
+          "belief_clue": "自由太贵 / 人生须符合期待"
+        },
+        {
+          "id": "E",
+          "text": "视情况而定（可填写）",
+          "score": 1,
+          "belief_clue": null
+        }
+      ],
+      "scoring_note": "A 代价—支持的合理权衡；B 关系与自主并重。C 习惯性自我收缩；D 把自由与「像样人生」对立成绝对规则。",
+      "dimension": "meaning_fulfillment",
+      "theme": "自由代价与社会期待"
+    }
+  ],
+  "deep_explore": {
+    "money_wealth": [
+      {
+        "id": "DE-MW-01",
+        "text": "当你想到「钱不够」或「财务突然出状况」时，你最担心发生什么？"
+      },
+      {
+        "id": "DE-MW-02",
+        "text": "如果担心的事真的发生了，对你来说最难接受的是什么？（失去资源本身，还是失去某种身份、安全感或掌控感？）"
+      },
+      {
+        "id": "DE-MW-03",
+        "text": "「要先稳住钱 / 赚钱必须很辛苦 / 不配要更多」这类想法，曾经保护过你什么？"
+      },
+      {
+        "id": "DE-MW-04",
+        "text": "它现在是否也限制了你的某些选择？（自我投资、谈报酬、换工作、享受可负担的一小步）"
+      }
+    ],
+    "career_achievement": [
+      {
+        "id": "DE-CA-01",
+        "text": "当你想到「迈出那一步却搞砸 / 比不上别人」时，你最担心发生什么？"
+      },
+      {
+        "id": "DE-CA-02",
+        "text": "如果真的搞砸或落后了，对你来说最难接受的是什么？（别人的看法、自我评价，还是机会本身？）"
+      },
+      {
+        "id": "DE-CA-03",
+        "text": "「没准备好不能开始 / 稳定压过一切 / 要用成绩证明自己」这类想法，曾经保护过你什么？"
+      },
+      {
+        "id": "DE-CA-04",
+        "text": "它现在是否也限制了你的某些选择？（转向、曝光、申请、交付、承认「我喜欢」）"
+      }
+    ],
+    "self_worth_identity": [
+      {
+        "id": "DE-SW-01",
+        "text": "当你想到「我可能不够好 / 不够被看见」时，你最担心发生什么？"
+      },
+      {
+        "id": "DE-SW-02",
+        "text": "如果担心的事发生了，对你来说最难接受的是什么？"
+      },
+      {
+        "id": "DE-SW-03",
+        "text": "「先证明自己、先让别人满意、不能犯错」这类想法，曾经保护过你什么？"
+      },
+      {
+        "id": "DE-SW-04",
+        "text": "它现在是否也限制了你的某些选择？（休息、拒绝、接收称赞、为自己争取、做「不完美但真实」的自己）"
+      }
+    ],
+    "intimacy_love": [
+      {
+        "id": "DE-IL-01",
+        "text": "当你想到「在关系里被误解、被疏远或被离开」时，你最担心发生什么？"
+      },
+      {
+        "id": "DE-IL-02",
+        "text": "如果担心的事发生了，对你来说最难接受的是什么？（孤独本身，还是「我不值得被爱」的结论？）"
+      },
+      {
+        "id": "DE-IL-03",
+        "text": "「少提需求、先配合、不能被抛弃」这类想法，曾经保护过你什么？"
+      },
+      {
+        "id": "DE-IL-04",
+        "text": "它现在是否也限制了你的某些选择？（表达需要、设边界、允许冲突后修复、选择真正契合的亲密）"
+      }
+    ],
+    "social_belonging": [
+      {
+        "id": "DE-SB-01",
+        "text": "当你想到「让别人失望 / 被排除在外」时，你最担心发生什么？"
+      },
+      {
+        "id": "DE-SB-02",
+        "text": "如果真的发生冲突或不被喜欢，对你来说最难接受的是什么？"
+      },
+      {
+        "id": "DE-SB-03",
+        "text": "「不能拒绝、先照顾大家情绪」这类想法，曾经保护过你什么？"
+      },
+      {
+        "id": "DE-SB-04",
+        "text": "它现在是否也限制了你的某些选择？（说不、表达异议、离开消耗性圈子、把精力留给真正重要的人）"
+      }
+    ],
+    "choice_agency": [
+      {
+        "id": "DE-CH-01",
+        "text": "当你想到「选错了 / 结果不确定」时，你最担心发生什么？"
+      },
+      {
+        "id": "DE-CH-02",
+        "text": "如果选得不完美，对你来说最难接受的是什么？（后果本身，还是「我无能掌控人生」的感觉？）"
+      },
+      {
+        "id": "DE-CH-03",
+        "text": "「必须确定再动 / 必须选到最好」这类想法，曾经保护过你什么？"
+      },
+      {
+        "id": "DE-CH-04",
+        "text": "它现在是否也限制了你的某些选择？（开始、结束、试错、在信息不全时仍前进一步）"
+      }
+    ],
+    "meaning_fulfillment": [
+      {
+        "id": "DE-MF-01",
+        "text": "当你想到「过自己真正想要的生活」时，你最担心发生什么？"
+      },
+      {
+        "id": "DE-MF-02",
+        "text": "如果把喜欢与意义往前排一点，对你来说最难接受的是什么？（他人失望，还是自己「不够负责任」的标签？）"
+      },
+      {
+        "id": "DE-MF-03",
+        "text": "「等责任完成再生活 / 追求喜欢不现实」这类想法，曾经保护过你什么？"
+      },
+      {
+        "id": "DE-MF-04",
+        "text": "它现在是否也限制了你的某些选择？（划出喜欢的时间、调整人生剧本、允许自己被「不那么正确」地看见）"
+      }
+    ]
+  },
+  "cross_patterns": [
+    {
+      "key": "scarcity_insecurity",
+      "name": "匮乏与不安全感",
+      "related": [
+        "money_wealth",
+        "career_achievement",
+        "intimacy_love"
+      ]
+    },
+    {
+      "key": "fear_of_failure",
+      "name": "害怕失败",
+      "related": [
+        "career_achievement",
+        "choice_agency"
+      ]
+    },
+    {
+      "key": "perfectionism",
+      "name": "完美主义倾向",
+      "related": [
+        "choice_agency",
+        "career_achievement",
+        "self_worth_identity"
+      ]
+    },
+    {
+      "key": "people_pleasing",
+      "name": "讨好与过度迎合",
+      "related": [
+        "social_belonging",
+        "intimacy_love",
+        "self_worth_identity"
+      ]
+    },
+    {
+      "key": "control_certainty",
+      "name": "控制与过度确定性需求",
+      "related": [
+        "choice_agency",
+        "money_wealth",
+        "career_achievement"
+      ]
+    },
+    {
+      "key": "over_responsibility",
+      "name": "过度责任感",
+      "related": [
+        "social_belonging",
+        "meaning_fulfillment",
+        "intimacy_love"
+      ]
+    },
+    {
+      "key": "external_validation",
+      "name": "外部评价依赖",
+      "related": [
+        "self_worth_identity",
+        "social_belonging",
+        "career_achievement"
+      ]
+    },
+    {
+      "key": "self_negation",
+      "name": "自我否定",
+      "related": [
+        "self_worth_identity",
+        "meaning_fulfillment",
+        "money_wealth"
+      ]
+    }
+  ],
+  "belief_themes": {
+    "money_wealth": [
+      {
+        "key": "mw_security_first",
+        "name": "安全优先的资源观",
+        "positive": "提前规划、降低真实财务风险",
+        "limit": "可负担的选择也被读成危险",
+        "perspective": "安全感也可来自计划与支持，而不只「少动钱」",
+        "explore": "哪一笔「为自己花的钱」其实符合长期安全？"
+      },
+      {
+        "key": "mw_earn_hard",
+        "name": "赚钱必苦 / 能力设限",
+        "positive": "吃苦耐劳、务实",
+        "limit": "挡掉更轻松高效的路径",
+        "perspective": "辛苦不是唯一入场券",
+        "explore": "若「少苦一点也能多一点」，你会先试哪一小步？"
+      },
+      {
+        "key": "mw_deserve_block",
+        "name": "不配拥有更多",
+        "positive": "低调、少冲突",
+        "limit": "谈报酬与富足想象被掐断",
+        "perspective": "交换价值不等于贪",
+        "explore": "把报价改写成「澄清合作条件」时，身体什么感觉？"
+      }
+    ],
+    "career_achievement": [
+      {
+        "key": "ca_ready_gate",
+        "name": "准备好了才开始",
+        "positive": "减少莽撞",
+        "limit": "起点无限后移",
+        "perspective": "最小可行 + 退出方案也是一种专业",
+        "explore": "只允许「成本可控的一小步」，那一步是什么？"
+      },
+      {
+        "key": "ca_stable_over_desire",
+        "name": "稳定压过热爱",
+        "positive": "降低波动风险",
+        "limit": "渴望长期无声",
+        "perspective": "稳定与热爱可以分期设计",
+        "explore": "若保留 70% 稳定，30% 试热爱，会怎么排？"
+      },
+      {
+        "key": "ca_prove_by_win",
+        "name": "用输赢证明能力",
+        "positive": "上进、有斗志",
+        "limit": "一次失利就动摇资格感",
+        "perspective": "表现是样本，不是人格判决",
+        "explore": "哪次「搞砸但还好好的」可以当你的反例？"
+      }
+    ],
+    "self_worth_identity": [
+      {
+        "key": "sw_earn_worth",
+        "name": "用优秀换认可",
+        "positive": "自律、成长驱动",
+        "limit": "休息与被爱也要「赚到」",
+        "perspective": "价值可以先在，表现是表达",
+        "explore": "不产出的那天你仍值得被温柔对待——哪里卡住？"
+      },
+      {
+        "key": "sw_no_mistake",
+        "name": "不能犯错",
+        "positive": "质量意识",
+        "limit": "试错与真实表达变难",
+        "perspective": "错误是信息，不是判决",
+        "explore": "最近一次「小错但关系仍在」是什么？"
+      },
+      {
+        "key": "sw_meet_expect",
+        "name": "满足期待才安全",
+        "positive": "关系敏感、好合作",
+        "limit": "真实需求后置",
+        "perspective": "清晰的「不」常让关系更可预期",
+        "explore": "你曾见过谁拒绝之后关系更稳？"
+      }
+    ],
+    "intimacy_love": [
+      {
+        "key": "il_need_shame",
+        "name": "提需求不好意思",
+        "positive": "体贴、少给压力",
+        "limit": "亲密停留在猜",
+        "perspective": "需求是说明书，不是勒索",
+        "explore": "用「我需要…」代替「你应该懂」会怎样？"
+      },
+      {
+        "key": "il_conditional_love",
+        "name": "爱是有条件的",
+        "positive": "愿意付出、维护关系",
+        "limit": "自我持续打折",
+        "perspective": "爱也可以包含差异与修复",
+        "explore": "哪次分歧之后你们其实更靠近了？"
+      },
+      {
+        "key": "il_abandon_fear",
+        "name": "不能被抛弃",
+        "positive": "重视连接",
+        "limit": "边界与信任两难",
+        "perspective": "连接不等于失去自己",
+        "explore": "你的边界里，哪一条其实是在保护关系？"
+      }
+    ],
+    "social_belonging": [
+      {
+        "key": "sb_no_disappoint",
+        "name": "不能让人失望",
+        "positive": "可靠、体贴",
+        "limit": "透支后委屈",
+        "perspective": "让一部分人失望，是成人世界的常态算术",
+        "explore": "本周哪个「不」可以温和地练习？"
+      },
+      {
+        "key": "sb_conflict_rupture",
+        "name": "冲突＝破裂",
+        "positive": "避免火药",
+        "limit": "真问题堆积",
+        "perspective": "冲突是信息，破裂是未修复",
+        "explore": "有没有「吵过仍在」的关系样本？"
+      },
+      {
+        "key": "sb_carry_mood",
+        "name": "别人情绪归我",
+        "positive": "共情强",
+        "limit": "扛过多不属于你的责任",
+        "perspective": "共情不等于承担责任",
+        "explore": "对方的情绪里，哪一块其实不是你的？"
+      }
+    ],
+    "choice_agency": [
+      {
+        "key": "ch_certainty_first",
+        "name": "确定了再动",
+        "positive": "降低盲目风险",
+        "limit": "窗口期空过",
+        "perspective": "行动也是收集信息的方式",
+        "explore": "最小可逆实验是什么？"
+      },
+      {
+        "key": "ch_wrong_ruins_life",
+        "name": "选错毁一生",
+        "positive": "认真对待选择",
+        "limit": "决策瘫痪",
+        "perspective": "多数选择可修正、可迭代",
+        "explore": "你生命里哪次「次优选择」后来被你用活了？"
+      },
+      {
+        "key": "ch_must_best",
+        "name": "必须最优解",
+        "positive": "高标准",
+        "limit": "拒绝足够好",
+        "perspective": "足够好是策略",
+        "explore": "三个选项里，「70 分且可开始」的是哪一个？"
+      }
+    ],
+    "meaning_fulfillment": [
+      {
+        "key": "mf_desire_unreal",
+        "name": "想要的不现实",
+        "positive": "脚踏实地",
+        "limit": "愿景无法显影",
+        "perspective": "现实是可设计的约束，不是禁令",
+        "explore": "把愿望缩成「本月 2 小时」，仍算数吗？"
+      },
+      {
+        "key": "mf_duty_first_forever",
+        "name": "责任清零才能生活",
+        "positive": "负责、可靠",
+        "limit": "自我无限延期",
+        "perspective": "责任与喜欢可以并行插队",
+        "explore": "哪一项责任其实可以「够用就好」？"
+      },
+      {
+        "key": "mf_freedom_too_costly",
+        "name": "自由代价太大",
+        "positive": "顾及他人期待",
+        "limit": "真实人生被搁置",
+        "perspective": "代价可拆步、可谈",
+        "explore": "若只对最信任的一个人显露一点真实愿望，会是什么？"
+      }
+    ]
+  },
+  "micro_actions": {
+    "money_wealth": "今晚记下：最近一笔「可负担却纠结」的花费——纠结里有几分是预算，几分是旧担心。",
+    "career_achievement": "选一件拖延的小事，只做 **15 分钟**的最小版，然后故意停住，感受「未完成但安全」。",
+    "self_worth_identity": "收到或回想一句称赞，写下一句「我愿意接收的部分是…」——只写一句即可。",
+    "intimacy_love": "向信任的人发出一句低风险需求（或在日记里先写出来），不要求立刻被满足。",
+    "social_belonging": "对一个低利害请求练习温和拒绝或推迟，事后只观察身体感觉 1 分钟。",
+    "choice_agency": "为一个悬而未决的小事设「今晚 21:00 前选足够好的那个」闹钟，并执行。",
+    "meaning_fulfillment": "日历上画出 **30 分钟**「只属于喜欢」的空白，并守住这一次。"
+  },
+  "disclaimer": "本工具用于自我探索与教练对话准备，不能替代心理咨询、精神科诊疗或危机干预。分数与主题均为探索线索，不作临床诊断。若你正在经历强烈痛苦或有自伤/伤人风险，请优先寻求当地专业与紧急资源；本产品不提供危机评估。"
+}

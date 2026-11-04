@@ -1,0 +1,257 @@
+@import "tailwindcss";
+
+/* Self-hosted Noto Sans SC — crisp CJK sans; latin companion for English labels */
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/noto-sans-sc-latin-400.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/noto-sans-sc-latin-500.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/noto-sans-sc-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/noto-sans-sc-500.woff2") format("woff2");
+}
+
+/* Self-hosted Noto Serif — brand / English academic labels only (subset + latin) */
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/noto-serif-sc-latin-400.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/noto-serif-sc-latin-500.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/noto-serif-sc-brand-400.woff2") format("woff2");
+}
+
+@theme {
+  /* Brand palette — Light Editorial × Soft Minimalism */
+  --color-ivory: #F8F7F2;
+  --color-cream: #FCFBF8;
+  --color-sage: #E8EEE7;
+  --color-mist: #E9EFF0;
+  --color-sand: #F0EDE5;
+  --color-gold: #D8B66F;
+  --color-amber: #E9C77F;
+  --color-ink: #393A35;
+  --color-ink-secondary: #777970;
+  --color-ink-muted: #A3A49B;
+  --color-border: #E9E8E1;
+
+  /* Legacy aliases kept so other pages still compile without logic changes */
+  --color-cream-soft: #F0EDE5;
+  --color-mint: #E8EEE7;
+  --color-mint-deep: #C9D5C8;
+  --color-bluegray: #E9EFF0;
+  --color-bluegray-deep: #B7C4C7;
+  --color-gold-soft: #E9C77F;
+  --color-gold-glow: rgba(216, 182, 111, 0.28);
+  --color-forest: #5A6B5E;
+  --color-forest-deep: #4A5A4E;
+  --color-sage-deep: #8FA094;
+
+  /* Display/brand: elegant serif. Body/UI: crisp Noto Sans SC. */
+  --font-display: "Noto Serif SC", "Songti SC", "STSong", Georgia, "Times New Roman", serif;
+  --font-serif: "Noto Serif SC", "Songti SC", "STSong", Georgia, "Times New Roman", serif;
+  --font-sans: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #F8F7F2;
+  color: #393A35;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-synthesis: none;
+  /* Prefer natural rasterization: antialiased + serif fallbacks looked soft/blurry on many phones */
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  text-rendering: auto;
+}
+
+::selection {
+  background: #E8EEE7;
+}
+
+/* Default headings stay sans (functional Chinese titles). Opt into .font-display / .font-serif for brand. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-synthesis: none;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-synthesis: none;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+  font-synthesis: none;
+}
+
+
+/* —— Home page —— */
+.home-page {
+  background:
+    radial-gradient(ellipse 90% 42% at 50% 0%, rgba(233, 199, 127, 0.10), transparent 58%),
+    radial-gradient(ellipse 70% 36% at 80% 18%, rgba(232, 238, 231, 0.55), transparent 60%),
+    linear-gradient(180deg, #FCFBF8 0%, #F8F7F2 48%, #F0EDE5 100%);
+}
+
+.home-fade {
+  animation: home-fade-in 0.9s ease-out both;
+}
+
+.logo-wrap {
+  /* Wider than letter body so glow/arc may overhang; letters are centered in the asset */
+  width: min(86vw, 260px);
+  height: 78px;
+}
+
+.logo-img {
+  /* ~200px total → letter body ≈ 120px (matches prior visual weight after rebalance pad) */
+  width: 200px;
+  max-width: 100%;
+}
+
+.logo-glow {
+  position: absolute;
+  /* Align soft breath glow to the "i" (≈61% across letter-centered asset) */
+  left: 61%;
+  top: 36%;
+  width: 58px;
+  height: 58px;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(233, 199, 127, 0.26) 0%, rgba(233, 199, 127, 0.08) 42%, transparent 72%);
+  pointer-events: none;
+  animation: logo-breathe 5.5s ease-in-out infinite;
+}
+
+.btn-explore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 188px;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  border: 1px solid #D8B66F;
+  background: rgba(252, 251, 248, 0.72);
+  color: #393A35;
+  font-size: 14.5px;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+  box-shadow: 0 1px 0 rgba(216, 182, 111, 0.12);
+}
+
+.btn-explore:hover {
+  background: rgba(232, 238, 231, 0.85);
+  border-color: #C9A65F;
+  box-shadow: 0 6px 18px rgba(57, 58, 53, 0.05);
+}
+
+.btn-explore:active {
+  transform: translateY(1px);
+  background: #F0EDE5;
+  border-color: #C9A65F;
+}
+
+.btn-explore:focus-visible {
+  outline: 2px solid rgba(216, 182, 111, 0.55);
+  outline-offset: 3px;
+}
+
+@keyframes home-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logo-breathe {
+  0%, 100% {
+    opacity: 0.55;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.95;
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+.quiz-option:active {
+  transform: none;
+  opacity: 0.92;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-fade,
+  .logo-glow,
+  .btn-explore,
+  .quiz-option {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .btn-explore:active,
+  .quiz-option:active {
+    transform: none;
+  }
+}
+
+
+/* Export surface: stick to hex so snapshot libs avoid oklab/oklch parse errors */
+.report-export-root {
+  color: #393A35;
+  background: #F8F7F2;
+}
+.report-export-root * {
+  border-color: #E9E8E1;
+}
