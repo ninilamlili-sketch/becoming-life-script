@@ -10,7 +10,8 @@
   node_bundler = "esbuild"
   included_files = ["netlify/functions/_shared/**"]
 
-# API → Functions (must be BEFORE SPA fallback; force=true wins over static)
+# API → Functions. Same rules as public/_redirects (evaluated first; keep in sync).
+# force=true matches the 200! rewrites. Must stay before the SPA fallback.
 [[redirects]]
   from = "/api/redeem/activate"
   to = "/.netlify/functions/redeem-activate"

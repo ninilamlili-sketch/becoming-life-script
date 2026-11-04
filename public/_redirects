@@ -1,1 +1,8 @@
-/*    /index.html   200
+# Netlify reads this file before netlify.toml and uses the first match.
+# These API rewrites must stay above the SPA catch-all or /api/* returns HTML.
+/api/redeem/activate   /.netlify/functions/redeem-activate   200!
+/api/redeem/session    /.netlify/functions/redeem-session    200!
+/api/admin/void        /.netlify/functions/admin-void        200!
+
+# SPA fallback. Not forced, so real files such as /assets/* are served as-is.
+/*                     /index.html                           200
